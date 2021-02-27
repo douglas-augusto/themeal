@@ -1,0 +1,203 @@
+body {
+    background-color: #fafafa;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+ :-ms-input-placeholder {
+    color: white;
+}
+
+ ::-ms-input-placeholder {
+    color: white;
+}
+
+.search-center {
+    padding-left: 350px;
+    width: 72%;
+    padding-top: 10px;
+    display: flex;
+}
+
+#search-icon {
+    position: absolute;
+    margin-top: -8px;
+    padding: 0px 0px 0px 10px;
+}
+
+#search-input {
+    padding: 0px 0px 0px 45px;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 200ms ease;
+    border: none;
+    font-size: 16px;
+    appearance: textfield;
+    font-weight: 400;
+    outline: none;
+    border-radius: 5px;
+}
+
+#search-input:hover {
+    background: rgba(255, 255, 255, 0.541);
+}
+
+#search-input:focus {
+    color: #333;
+    background-color: #fff;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#submit-button {
+    height: 45px;
+    background-color: rgb(2, 177, 95);
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    display: none;
+}
+
+#submit-button:hover {
+    background-color: rgb(0, 228, 121);
+}
+
+.container {
+    width: 70%;
+    padding-top: 20px;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.thumbnail {
+    height: 240px;
+    border-radius: 20px 20px 0px 0px !important;
+}
+
+.meal-title {
+    margin: 0;
+    font-size: 23px;
+    margin-top: -5px;
+}
+
+.meal-category {
+    color: rgb(109, 108, 108);
+    font-weight: 400;
+}
+
+.cooking {
+    display: none;
+}
+
+.ingredients {
+    display: none;
+}
+
+.card .card-content {
+    padding-bottom: 12px;
+}
+
+.title-secondary {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ingredient {
+    font-size: 16px;
+    color: #e25500;
+    font-weight: 500;
+    text-align: center;
+}
+
+#logo {
+    padding-top: 12px;
+}
+
+.home-background {
+    background-color: #cccccc;
+    height: 83vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(20, 20, 20);
+    opacity: 1;
+}
+
+#welcome-text {
+    font-size: 90px;
+    font-variant: small-caps;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#welcome-text-secondary {
+    color: #fff;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.page-footer .footer-copyright {
+    min-height: 47px;
+}
+
+
+/* Mobile Version */
+
+@media only screen and (max-width: 992px) {
+    body {
+        background-color: #fff;
+    }
+    nav .brand-logo {
+        left: 0;
+        -webkit-transform: translateX(-0%);
+        transform: translateX(-0%);
+    }
+    .search-center {
+        padding-left: 85px;
+        width: 95%;
+        padding-top: 10px;
+        display: flex;
+        margin-top: -3px;
+    }
+    #submit-button {
+        height: 42px;
+    }
+    .container {
+        width: 95%;
+        padding-top: 20px;
+    }
+    #logo {
+        object-fit: cover;
+        object-position: left;
+        width: 74px;
+        height: 55px;
+    }
+    #welcome-text {
+        font-size: 60px;
+    }
+    #welcome-text-secondary {
+        font-size: 30px;
+    }
+}
